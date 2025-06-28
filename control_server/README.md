@@ -43,7 +43,7 @@ Por defecto, el servidor escucha en el puerto `12345` y en todas las interfaces 
 
 Puedes encontrar una descripción técnica completa del archivo `ControlServer.py` en el siguiente documento:
 
-👉 [`ControlServer_documentacion.md`](./ControlServer_documentacion.md)
+👉 [`ControlServer_documentacion.md`](./ControlServer_documentation.md)
 
 Incluye análisis de:
 
