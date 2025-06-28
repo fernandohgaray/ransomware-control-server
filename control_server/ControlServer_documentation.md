@@ -1,3 +1,4 @@
+
 # 📄 Documentación Técnica: `ControlServer.py`
 
 ## 📌 Descripción del código original
@@ -13,6 +14,7 @@
 Aunque este archivo **no realiza cifrado directamente**, **interactúa con la clave de cifrado generada por el malware** (ver `Encoder.py`). El servidor:
 - Recibe solicitudes con datos de la víctima (hostname, usuarios activos, MAC, clave de cifrado).
 - Puede responder con la clave si se le solicita explícitamente (`request: "key"`).
+- El servidor **únicamente** anota los datos recibidos en los registros (`server_log.txt`), el usuario debe **manualmente** buscar la llave en los registros e ingresarla cuando el decoder la solicita.
 
 ### 📡 Propagación
 El archivo **no incluye mecanismos de propagación**, pero **facilita el control remoto** del ransomware al recibir conexiones múltiples desde sistemas infectados.
